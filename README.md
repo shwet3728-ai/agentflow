@@ -1,0 +1,2 @@
+# agentflow
+Enforces a real spec-to-ship pipeline on any coding agent: auto-triggering skills run spec → plan → task contracts → TDD → severity-gated review → merge. One manifest compiles to Claude Code, Codex, and Cursor plugins; a committed ledger survives compaction, so every session resumes exactly where the previous one died. Zero telemetry. MIT licensed.

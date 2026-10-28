@@ -1,8 +1,16 @@
 {
   "name": "agentflow",
   "version": "0.1.0",
-  "description": "Spec-driven pipeline + TDD execution for coding agents. Skills auto-trigger; a ledger survives compaction.",
+  "description": "Spec-driven pipeline + TDD execution for coding agents. Skills auto-trigger; a committed ledger survives compaction.",
   "author": {
-    "name": "TODO-your-name"
-  }
+    "name": "Shwet"
+  },
+  "keywords": [
+    "agent-skills",
+    "spec-driven-development",
+    "test-driven-development",
+    "code-review",
+    "coding-agents",
+    "workflow"
+  ]
 }

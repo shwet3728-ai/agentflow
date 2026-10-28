@@ -6,10 +6,12 @@ const { build } = require('../compiler/build');
 const cmd = process.argv[2];
 const here = repo => path.resolve(__dirname, '..', repo);
 
-if (cmd === 'build') {
+if (cmd === 'version' || cmd === '--version' || cmd === '-v') {
+  console.log(JSON.parse(fs.readFileSync(here('manifest.json'), 'utf8')).version);
+} else if (cmd === 'build') {
   const manifest = process.argv[3] || here('manifest.json');
   const { count, skills } = build(manifest, path.dirname(path.resolve(manifest)));
-  console.log(`built .claude-plugin + .codex-plugin from ${count} skills: ${skills.join(', ')}`);
+  console.log(`built agentflow manifests for Claude Code, Codex, Cursor + cross-runtime (${count} skills): ${skills.join(', ')}`);
 } else if (cmd === 'init') {
   const target = process.argv[3];
   if (!target) { console.error('usage: agentflow init <project-dir>'); process.exit(1); }
@@ -33,6 +35,6 @@ if (cmd === 'build') {
 Next: install the agentflow plugin in your harness (Codex /plugins, Claude /plugin)
 and edit .agentflow/conventions.md — team standards every stage inherits.`);
 } else {
-  console.error('usage: agentflow [build | init <project-dir>]');
+  console.error('usage: agentflow [build | init <project-dir> | version]');
   process.exit(1);
 }

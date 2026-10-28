@@ -1,0 +1,18 @@
+{
+  "name": "agentflow-marketplace",
+  "description": "Marketplace for agentflow",
+  "owner": {
+    "name": "Shwet"
+  },
+  "plugins": [
+    {
+      "name": "agentflow",
+      "description": "Spec-driven pipeline + TDD execution for coding agents. Skills auto-trigger; a committed ledger survives compaction.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Shwet"
+      }
+    }
+  ]
+}

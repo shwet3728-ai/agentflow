@@ -2,7 +2,7 @@
   "name": "agentflow-marketplace",
   "description": "Marketplace for agentflow",
   "owner": {
-    "name": "Shwet"
+    "name": "Shwet Anand"
   },
   "plugins": [
     {
@@ -11,7 +11,7 @@
       "version": "0.1.0",
       "source": "./",
       "author": {
-        "name": "Shwet"
+        "name": "Shwet Anand"
       }
     }
   ]

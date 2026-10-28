@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "agentflow",
-      "description": "Spec-driven pipeline + TDD execution for coding agents. Skills auto-trigger; a committed ledger survives compaction.",
+      "description": "A spec-to-ship pipeline for coding agents: auto-triggering skills enforce spec, plan, task contracts, TDD, and severity-gated review. One manifest compiles to Claude Code, Codex, Cursor, and any AGENTS.md harness. A committed ledger survives context compaction. Zero telemetry.",
       "version": "0.1.0",
       "source": "./",
       "author": {

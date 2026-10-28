@@ -1,6 +1,8 @@
 # Agentflow
 
-One manifest → plugin manifests for Claude Code, Codex, Cursor, and any `AGENTS.md` harness. A **spec → plan → tasks → execute → review → finish** pipeline as auto-triggering skills, with a **committed ledger** that survives context compaction.
+Enforce a real pipeline on ANY coding agent: **spec → plan → task contracts → TDD → severity-gated review → merge**, as auto-triggering skills. A **committed ledger** survives context compaction across sessions. Zero telemetry.
+
+One manifest → plugin manifests for Claude Code, Codex, Cursor, and any `AGENTS.md` harness.
 
 Combines what works from superpowers (skill engine + TDD discipline), spec-kit (spec-first gates), taskmaster (task contracts), BMAD (roles folded into stages), Agent OS (team conventions) — plus two things none of them ship: a **plugin compiler** (one `manifest.json` → every harness manifest) and a **committed cross-session ledger**. Zero telemetry.
 

@@ -1,7 +1,7 @@
 {
   "name": "agentflow",
   "version": "0.1.0",
-  "description": "Spec-driven pipeline + TDD execution for coding agents. Skills auto-trigger; a committed ledger survives compaction.",
+  "description": "A spec-to-ship pipeline for coding agents: auto-triggering skills enforce spec, plan, task contracts, TDD, and severity-gated review. One manifest compiles to Claude Code, Codex, Cursor, and any AGENTS.md harness. A committed ledger survives context compaction. Zero telemetry.",
   "author": {
     "name": "Shwet"
   },
@@ -23,8 +23,8 @@
   "hooks": {},
   "interface": {
     "displayName": "Agentflow",
-    "shortDescription": "Spec, plan, task contracts, TDD, review — one flow for any coding agent",
-    "longDescription": "Agentflow enforces a spec->plan->tasks->execute->review->finish pipeline via auto-triggering skills, with team conventions merged in and a git-committed ledger that survives context compaction.",
+    "shortDescription": "Enforces spec → plan → task contracts → TDD → review for any coding agent; compiles from one manifest",
+    "longDescription": "Agentflow turns 'start coding' into a signed-off pipeline: an analyst-drawn spec, an architect's plan, machine-checkable task contracts (done-when, stop-if), TDD execution with per-task evidence, severity-gated code review, and an integration menu at the end. A git-committed ledger records every gate, ruling, and completion — a fresh session, or one that just went through compaction, resumes exactly where the last one died: no repeated work, no lost decisions. Installs as a Claude Code / Codex / Cursor plugin or rides on AGENTS.md anywhere. Zero telemetry, MIT.",
     "category": "Developer Tools",
     "capabilities": [
       "Interactive",

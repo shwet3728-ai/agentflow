@@ -1,0 +1,24 @@
+{
+  "name": "agentflow",
+  "version": "0.1.0",
+  "description": "Spec-driven pipeline + TDD execution for coding agents. Skills auto-trigger; a ledger survives compaction.",
+  "author": {
+    "name": "TODO-your-name"
+  },
+  "skills": [
+    "./pipeline/",
+    "./skills/"
+  ],
+  "hooks": {},
+  "interface": {
+    "displayName": "Agentflow",
+    "shortDescription": "Spec, plan, task contracts, TDD, review — one flow for any coding agent",
+    "longDescription": "Agentflow enforces a spec->plan->tasks->execute->review->finish pipeline via auto-triggering skills, with team conventions merged in and a git-committed ledger that survives context compaction.",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ]
+  }
+}

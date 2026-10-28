@@ -1,0 +1,13 @@
+{
+  "name": "agentflow",
+  "version": "0.1.0",
+  "description": "One manifest, every harness. Spec->plan->tasks->execute pipeline skills with a durable cross-session ledger.",
+  "license": "MIT",
+  "bin": {
+    "agentflow": "bin/agentflow.js"
+  },
+  "scripts": {
+    "test": "node compiler/test.js",
+    "build": "node bin/agentflow.js build"
+  }
+}

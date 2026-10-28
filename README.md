@@ -15,7 +15,7 @@ Requirements: Node ≥ 18 for the CLI. For plugin installs, no Node needed.
 ### Claude Code
 
 ```bash
-/plugin marketplace add shwet/agentflow
+/plugin marketplace add shwet3728-ai/agentflow
 /plugin install agentflow
 ```
 
@@ -33,7 +33,7 @@ Until listed on the OpenAI official marketplace (a one-line PR to `openai/plugin
 or, if your build supports URL install:
 
 ```bash
-/plugins install https://github.com/shwet/agentflow
+/plugins install https://github.com/shwet3728-ai/agentflow
 ```
 
 ### Cursor
@@ -49,7 +49,7 @@ or search "agentflow" in the plugin marketplace.
 Anything that reads `AGENTS.md` or accepts a skills folder works without a plugin:
 
 ```bash
-npx -y github:shwet/agentflow#main init .
+npx -y github:shwet3728-ai/agentflow#main init .
 ```
 
 Then follow the one-time setup below. Skills live in `pipeline/` + `skills/`; harnesses discover them via `AGENTS.md` load-order or their own skills directory — copy the two folders into `~/.agents/skills/` (Codex/Copilot/Gemini cross-runtime alias) if you prefer a global install.

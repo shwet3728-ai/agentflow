@@ -20,6 +20,7 @@ Read the failing code path and what it depends on. Root cause before the patch. 
 ## Phase 3 — Fix, Minimal
 
 Smallest change that addresses the root's cause, not the symptom.
+- Multi-layer system? Instrument each layer boundary (what enters, what exits, state at each) and run ONCE to find where it breaks — before touching anything.
 - Each fix attempt: hypothesis -> minimal change -> re-run reproduction. Did the result change?
 - If a fix needs a second fix to still pass, your model of it is wrong — stop and re-read.
 - Never edit the reproduction expected-output to match what happened.
@@ -33,5 +34,5 @@ Smallest change that addresses the root's cause, not the symptom.
 
 ## Stop-Tiers
 
-- Two hypotheses' fixes tried and both wrong? Get a fresh pair of eyes — dispatch a subagent if your harness has one, or report to the human.
-- Fix spiraling larger than the bug? Stop. Your root-cause is wrong; go back to phase 2.
+- Fix #3 failed? **STOP. That's not a hypothesis problem, that's architecture.** Each fix revealing new shared state or new symptoms elsewhere = wrong pattern. Question the foundations with the human before any fix #4 — fixes under a bad design don't converge.
+- Fix spiraling larger than the bug? Same stop: your root-cause is wrong; go back to phase 2.

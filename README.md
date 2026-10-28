@@ -44,7 +44,7 @@ bin/agentflow.js     CLI: build | init
 compiler/build.js    manifest → .claude-plugin/plugin.json + .codex-plugin/plugin.json
 compiler/test.js     tests: emit both manifests; fail on malformed skill
 templates/           ledger.md, AGENTS.md — stamped by `init`
-skills/              meta skills: start (bootstrap), ledger-protocol, verify, systematic-debugging
+skills/              meta skills: agentflow-start (bootstrap), ledger-protocol, verify, systematic-debugging, writing-skills, diagnosing-agentflow
 pipeline/            the six stages, one SKILL.md each
 ```
 

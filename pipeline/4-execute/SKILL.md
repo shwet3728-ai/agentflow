@@ -32,7 +32,7 @@ Continuous execution: no "shall I continue?" between tasks — the human picked 
 - Task review: after the implementer reports, dispatch a reviewer (contract + report + diff as files; global constraints as attention lens). Spec compliance AND quality, both verdicts or no pass. Never pre-judge findings for the reviewer. Implementer self-review ≠ review.
 - Fix loop: re-review only the fix's scope, not the whole task. Round count matters less than: does each round change *outcome* (new failing test actually ran)? Two rounds with no new information → adjudicate, park with ruling.
 - Cheapest model per role: mechanical tasks → cheap; integration → standard; the FINAL branch review → most capable model, explicitly (an omitted model silently defaults to the session's model).
-- Never dispatch two implementers in parallel. Never let a subagent spawn its own reviewer.
+- Never dispatch two implementers in parallel (same tree = conflicts). Independent READ-ONLY investigations (debugging, review) may run parallel in one message. Never let a implementer subagent spawn its own reviewer.
 
 ## Context Budget (the anti-compaction rule)
 

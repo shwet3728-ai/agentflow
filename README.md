@@ -112,4 +112,4 @@ skills/              6 meta skills (bootstrap, ledger, verify, debugging, writin
 pipeline/            the 6 stages
 ```
 
-MIT license. Distinct skill text; structural conventions inspired by the MIT-licensed obra/superpowers.
+MIT license — full attribution chain in [NOTICE.md](NOTICE.md). Distinct skill text; structural conventions inspired by the MIT-licensed obra/superpowers.
